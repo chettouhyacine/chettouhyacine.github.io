@@ -37,129 +37,25 @@
       </nav>
     </header>
 
+    <!-- All the text on this page comes from content.js -->
     <main id="top">
-      <section class="hero">
-        <p class="eyebrow">Full-stack developer · Algeria</p>
-        <h1>
-          I build software that keeps working<br />
-          when the internet <span class="accent">doesn't.</span>
-        </h1>
-        <p class="lede">
-          Small businesses run on a laptop and a prayer. I ship Windows desktop tools with a
-          local database, local printing and local backups — no cloud bill, no connection
-          required, nothing lost when the line drops.
-        </p>
-        <div class="cta">
-          <a class="btn primary" href="#work">See the work</a>
-          <a class="btn" href="mailto:chettouhyacine2001@gmail.com">Get in touch</a>
-        </div>
-        <ul class="stack" aria-label="Main technologies">
-          <li>TypeScript</li>
-          <li>React</li>
-          <li>Electron</li>
-          <li>Node.js</li>
-          <li>SQLite</li>
-        </ul>
-      </section>
-
-      <section id="work" class="section">
-        <h2><span class="num">01</span> Featured work</h2>
-
-        <article class="project">
-          <div class="project-media">
-            <img
-              src="assets/showroom-dashboard.png"
-              alt="Showroom DZ dashboard showing stock value, monthly profit and alerts"
-              loading="lazy"
-            />
-          </div>
-          <div class="project-body">
-            <div class="project-head">
-              <h3>Showroom DZ</h3>
-              <span class="badge">Desktop app · 2026</span>
-            </div>
-            <p>
-              Management software for Algerian car showrooms: own and consigned stock, sales
-              with installments and trade-ins, consignment commissions, legal invoicing in
-              French and Arabic, reports, roles and audit trail — all on one machine with no
-              Internet connection.
-            </p>
-            <ul class="highlights">
-              <li>Money stored as integer centimes; invoices numbered without gaps, issued documents locked.</li>
-              <li>PDF printed from the same HTML as the live preview, plus Excel export with real formulas.</li>
-              <li>35 unit tests and 27 end-to-end checks, including backup → wipe → restore.</li>
-            </ul>
-            <div class="project-links">
-              <a class="btn small" href="https://github.com/chettouhyacine/showroom-dz" target="_blank" rel="noreferrer">Source code ↗</a>
-              <a class="btn small ghost" href="https://github.com/chettouhyacine/showroom-dz/releases/latest" target="_blank" rel="noreferrer">Windows installer ↗</a>
-            </div>
-            <p class="tags">Electron · React · TypeScript · SQLite · Tailwind · esbuild · exceljs</p>
-          </div>
-        </article>
-
-        <div class="project-small">
-          <img src="assets/showroom-invoice.png" alt="Generated A4 invoice with 19% VAT" loading="lazy" />
-          <div>
-            <h3>The invoice that had to be right</h3>
-            <p>
-              Every document type — invoice, quote, receipt, credit note, consignment mandate —
-              is generated from one HTML template engine, with three VAT modes (none, 19 %,
-              margin scheme), amounts written out in words, and a layout that survives printing
-              on cheap A4 paper.
-            </p>
-            <a class="text-link" href="https://github.com/chettouhyacine/showroom-dz/tree/main/samples" target="_blank" rel="noreferrer">
-              Real generated samples ↗
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <section id="about" class="section">
-        <h2><span class="num">02</span> About</h2>
-        <div class="about">
-          <p>
-            I'm Yacine, a full-stack developer based in Algeria. I work on the unglamorous
-            software that actually runs a business: stock lists, receipts, unpaid invoices,
-            commission owed to a car owner.
+      <div id="app">
+        <noscript>
+          <p style="padding: 2rem">
+            This page needs JavaScript to render. Reach me at
+            <a href="mailto:chettouhyacine2001@gmail.com">chettouhyacine2001@gmail.com</a> or on
+            <a href="https://github.com/chettouhyacine">GitHub</a>.
           </p>
-          <p>
-            My focus is <strong>offline-first desktop applications</strong>: a real local
-            database instead of a subscription, exact money arithmetic instead of floating
-            point, and documents that a tax inspector will accept. When a feature can't be
-            verified, it isn't finished — that's why the domain logic is unit-tested and the
-            whole flow is exercised end to end before a release.
-          </p>
-          <p>
-            I care about low-end hardware, French and Arabic interfaces, and backups a
-            non-technical owner can actually perform.
-          </p>
-          <dl class="facts">
-            <div><dt>Based in</dt><dd>Algeria</dd></div>
-            <div><dt>Focus</dt><dd>Offline-first business software</dd></div>
-            <div><dt>Stack</dt><dd>TypeScript, React, Electron, Node, SQLite</dd></div>
-            <div><dt>Languages</dt><dd>Arabic, French, English</dd></div>
-          </dl>
-        </div>
-      </section>
-
-      <section id="contact" class="section contact">
-        <h2><span class="num">03</span> Contact</h2>
-        <p class="contact-lead">
-          Available for freelance work and full-time roles — desktop apps, internal tools,
-          anything that has to run without a reliable connection.
-        </p>
-        <div class="cta">
-          <a class="btn primary" href="mailto:chettouhyacine2001@gmail.com">chettouhyacine2001@gmail.com</a>
-          <a class="btn" href="https://github.com/chettouhyacine" target="_blank" rel="noreferrer">github.com/chettouhyacine ↗</a>
-        </div>
-      </section>
+        </noscript>
+      </div>
     </main>
 
     <footer class="site-footer">
       <span>© <span id="year">2026</span> Yacine Chettouh</span>
-      <span>Built by hand — HTML, CSS, no framework.</span>
+      <span id="built">Built by hand — HTML, CSS, no framework.</span>
     </footer>
 
+    <script src="content.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
