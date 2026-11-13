@@ -1,10 +1,10 @@
 /* ============================================================
-   EDIT THIS FILE — everything you read on the site lives here.
+   EDIT THIS FILE. Everything you read on the site lives here.
    ------------------------------------------------------------
    Rules (the only ones):
    1. Change the text between the quotes '...' or "..." .
    2. Do not remove commas, brackets { } or [ ].
-   3. Save the file, commit, push — the live site updates in ~1 min.
+   3. Save the file, commit, push. The live site updates in ~1 min.
 
    Lines starting with // are comments and never appear on the page.
    ============================================================ */
@@ -17,15 +17,22 @@ const SITE = {
 
   /* ---------- the big opening block ---------- */
   hero: {
-    eyebrow: 'Full-stack developer · Algeria',
+    eyebrow: 'Full-stack developer in Algeria',
     // The headline is split so the last words can be highlighted.
     headline: 'I build software that keeps working',
-    // If you change the line above, change this too or delete it (write '').
+    // If you change the line above, change this too or write '' (empty).
     headlineBreak: 'when the internet',
     highlight: "doesn't.",
+
+    /* Your photo, shown next to the headline.
+       Put the file in assets/profile.jpg and it appears automatically.
+       Write '' (empty quotes) to hide the picture. */
+    photo: 'assets/profile.jpg',
+    photoAlt: 'Yacine Chettouh',
+
     lede:
       'Small businesses run on a laptop and a prayer. I ship Windows desktop tools with a ' +
-      'local database, local printing and local backups — no cloud bill, no connection ' +
+      'local database, local printing and local backups. No cloud bill, no connection ' +
       'required, nothing lost when the line drops.',
     buttons: [
       { label: 'See the work', href: '#work', primary: true },
@@ -42,16 +49,16 @@ const SITE = {
       image: 'assets/showroom-dashboard.png',
       imageAlt: 'Showroom DZ dashboard showing stock value, monthly profit and alerts',
       title: 'Showroom DZ',
-      badge: 'Desktop app · 2026',
+      badge: 'Desktop app, 2026',
       description:
         'Management software for Algerian car showrooms: own and consigned stock, sales ' +
         'with installments and trade-ins, consignment commissions, legal invoicing in ' +
-        'French and Arabic, reports, roles and audit trail — all on one machine with no ' +
+        'French and Arabic, reports, roles and audit trail, all on one machine with no ' +
         'Internet connection.',
       highlights: [
-        'Money stored as integer centimes; invoices numbered without gaps, issued documents locked.',
+        'Money stored as integer centimes. Invoices numbered without gaps, and issued documents locked.',
         'PDF printed from the same HTML as the live preview, plus Excel export with real formulas.',
-        '35 unit tests and 27 end-to-end checks, including backup → wipe → restore.',
+        '35 unit tests and 27 end to end checks, including backup, wipe and restore.',
       ],
       links: [
         { label: 'Source code ↗', href: 'https://github.com/chettouhyacine/showroom-dz', ghost: false },
@@ -61,19 +68,19 @@ const SITE = {
           ghost: true,
         },
       ],
-      tags: 'Electron · React · TypeScript · SQLite · Tailwind · esbuild · exceljs',
+      tags: 'Electron, React, TypeScript, SQLite, Tailwind, esbuild, exceljs',
     },
     second: {
       image: 'assets/showroom-invoice.png',
       imageAlt: 'Generated A4 invoice with 19% VAT',
       title: 'The invoice that had to be right',
       text:
-        'Every document type — invoice, quote, receipt, credit note, consignment mandate — ' +
+        'Every document type (invoice, quote, receipt, credit note, consignment mandate) ' +
         'is generated from one HTML template engine, with three VAT modes (none, 19 %, ' +
         'margin scheme), amounts written out in words, and a layout that survives printing ' +
         'on cheap A4 paper.',
       link: {
-        label: 'Real generated samples ↗',
+        label: 'See the generated samples ↗',
         href: 'https://github.com/chettouhyacine/showroom-dz/tree/main/samples',
       },
     },
@@ -88,12 +95,11 @@ const SITE = {
         'software that actually runs a business: stock lists, receipts, unpaid invoices, ' +
         'commission owed to a car owner.',
       'My focus is **offline-first desktop applications**: a real local database instead ' +
-        'of a subscription, exact ' +
-        'money arithmetic instead of floating point, and documents that a tax inspector ' +
-        'will accept. When a feature cannot be verified, it is not finished — that is why ' +
-        'the domain logic is unit-tested and the whole flow is exercised end to end before ' +
-        'a release.',
-      'I care about low-end hardware, French and Arabic interfaces, and backups a ' +
+        'of a subscription, exact money arithmetic instead of floating point, and documents ' +
+        'that a tax inspector will accept. When a feature cannot be verified, it is not ' +
+        'finished. That is why the domain logic is unit tested and the whole flow is ' +
+        'exercised end to end before a release.',
+      'I care about low-end hardware, French and Arabic interfaces, and backups that a ' +
         'non-technical owner can actually perform.',
     ],
     facts: [
@@ -109,7 +115,7 @@ const SITE = {
     number: '03',
     title: 'Contact',
     lead:
-      'Available for freelance work and full-time roles — desktop apps, internal tools, ' +
+      'Available for freelance work and full-time roles: desktop apps, internal tools, ' +
       'anything that has to run without a reliable connection.',
     buttons: [
       { label: 'chettouhyacine2001@gmail.com', href: 'mailto:chettouhyacine2001@gmail.com', primary: true },
@@ -117,7 +123,7 @@ const SITE = {
     ],
   },
 
-  footer: 'Built by hand — HTML, CSS, no framework.',
+  footer: 'Built by hand with HTML and CSS. No framework.',
 };
 
 window.SITE = SITE;

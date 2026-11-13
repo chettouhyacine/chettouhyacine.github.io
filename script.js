@@ -24,17 +24,28 @@
   const project = work.project || {};
   const second = work.second || {};
 
+  // The portrait is optional: if the file is missing it removes itself and the
+  // headline simply uses the full width.
+  const photo = hero.photo
+    ? `<figure class="hero-photo"><img src="${esc(hero.photo)}" alt="${esc(
+        hero.photoAlt || S.name,
+      )}" onerror="this.closest('figure').remove()" /></figure>`
+    : '';
+
   document.getElementById('app').innerHTML = `
-    <section class="hero">
-      <p class="eyebrow">${esc(hero.eyebrow)}</p>
-      <h1>${esc(hero.headline)}<br />${esc(hero.headlineBreak)} <span class="accent">${esc(
-        hero.highlight,
-      )}</span></h1>
-      <p class="lede">${esc(hero.lede)}</p>
-      <div class="cta">${(hero.buttons || []).map((b) => btn(b)).join('')}</div>
-      <ul class="stack" aria-label="Main technologies">${(hero.stack || [])
-        .map((s) => `<li>${esc(s)}</li>`)
-        .join('')}</ul>
+    <section class="hero${photo ? ' has-photo' : ''}">
+      <div class="hero-text">
+        <p class="eyebrow">${esc(hero.eyebrow)}</p>
+        <h1>${esc(hero.headline)}<br />${esc(hero.headlineBreak)} <span class="accent">${esc(
+          hero.highlight,
+        )}</span></h1>
+        <p class="lede">${esc(hero.lede)}</p>
+        <div class="cta">${(hero.buttons || []).map((b) => btn(b)).join('')}</div>
+        <ul class="stack" aria-label="Main technologies">${(hero.stack || [])
+          .map((s) => `<li>${esc(s)}</li>`)
+          .join('')}</ul>
+      </div>
+      ${photo}
     </section>
 
     <section id="work" class="section">
