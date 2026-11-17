@@ -22,7 +22,30 @@
   const aboutParagraphs = (about.paragraphs || []).map((p) => `<p>${rich(p)}</p>`);
 
   const project = work.project || {};
+  const notaire = work.notaire || {};
   const second = work.second || {};
+
+  // A project card. Used for the main project and for any second full project.
+  const card = (p) => `
+      <article class="project">
+        <div class="project-media">
+          <img src="${esc(p.image)}" alt="${esc(p.imageAlt)}" loading="lazy" />
+        </div>
+        <div class="project-body">
+          <div class="project-head">
+            <h3>${esc(p.title)}</h3>
+            <span class="badge">${esc(p.badge)}</span>
+          </div>
+          <p>${esc(p.description)}</p>
+          <ul class="highlights">${(p.highlights || [])
+            .map((h) => `<li>${esc(h)}</li>`)
+            .join('')}</ul>
+          <div class="project-links">${(p.links || [])
+            .map((l) => btn({ ...l, primary: false }, `small ${l.ghost ? 'ghost' : ''}`))
+            .join('')}</div>
+          <p class="tags">${esc(p.tags)}</p>
+        </div>
+      </article>`;
 
   // The portrait is optional: if the file is missing it removes itself and the
   // headline simply uses the full width.
@@ -51,25 +74,7 @@
     <section id="work" class="section">
       <h2><span class="num">${esc(work.number)}</span> ${esc(work.title)}</h2>
 
-      <article class="project">
-        <div class="project-media">
-          <img src="${esc(project.image)}" alt="${esc(project.imageAlt)}" loading="lazy" />
-        </div>
-        <div class="project-body">
-          <div class="project-head">
-            <h3>${esc(project.title)}</h3>
-            <span class="badge">${esc(project.badge)}</span>
-          </div>
-          <p>${esc(project.description)}</p>
-          <ul class="highlights">${(project.highlights || [])
-            .map((h) => `<li>${esc(h)}</li>`)
-            .join('')}</ul>
-          <div class="project-links">${(project.links || [])
-            .map((l) => btn({ ...l, primary: false }, `small ${l.ghost ? 'ghost' : ''}`))
-            .join('')}</div>
-          <p class="tags">${esc(project.tags)}</p>
-        </div>
-      </article>
+      ${project.title ? card(project) : ''}
 
       <div class="project-small">
         <img src="${esc(second.image)}" alt="${esc(second.imageAlt)}" loading="lazy" />
@@ -81,6 +86,8 @@
           )}</a>
         </div>
       </div>
+
+      ${notaire.title ? card(notaire) : ''}
     </section>
 
     <section id="about" class="section">

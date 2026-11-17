@@ -38,7 +38,7 @@ const SITE = {
       { label: 'See the work', href: '#work', primary: true },
       { label: 'Get in touch', href: 'mailto:chettouhyacine2001@gmail.com', primary: false },
     ],
-    stack: ['TypeScript', 'React', 'Electron', 'Node.js', 'SQLite'],
+    stack: ['Rust', 'Tauri', 'TypeScript', 'React', 'SQLite'],
   },
 
   /* ---------- section 01: what you have built ---------- */
@@ -84,6 +84,38 @@ const SITE = {
         href: 'https://github.com/chettouhyacine/showroom-dz/tree/main/samples',
       },
     },
+
+    /* ---------- second full project ---------- */
+    notaire: {
+      image: 'assets/notaire-home.png',
+      imageAlt: 'Notaire DZ home screen with daily summary cards and the Arabic sidebar',
+      title: 'Notaire DZ',
+      badge: 'Desktop app, 2026',
+      description:
+        'Practice software for an Algerian notary office: clients, case files, an encrypted ' +
+        'document vault, a tamper evident audit trail and encrypted backups, on one Windows ' +
+        'machine with no Internet connection. Arabic first interface, instant switch to French ' +
+        'with the layout direction.',
+      highlights: [
+        'Records are sealed with AES-256-GCM before they reach SQLite, under an Argon2id derived key, so a copied database file is useless on its own.',
+        'Every write, export and sensitive read is appended to a hash chained audit log that is verified on demand.',
+        'Rates and deadlines live in versioned rule tables marked to be verified by a notary, so the software never invents a legal rule.',
+      ],
+      links: [
+        { label: 'Source code ↗', href: 'https://github.com/chettouhyacine/notaire-dz', ghost: false },
+        {
+          label: 'Windows installer ↗',
+          href: 'https://github.com/chettouhyacine/notaire-dz/releases/latest',
+          ghost: true,
+        },
+        {
+          label: 'Client guide, PDF ↗',
+          href: 'https://github.com/chettouhyacine/notaire-dz/blob/main/docs/manual/NotaireDZ-Manuel.pdf',
+          ghost: true,
+        },
+      ],
+      tags: 'Rust, Tauri 2, React, TypeScript, SQLite, AES-256-GCM, Argon2id',
+    },
   },
 
   /* ---------- section 02: who you are ---------- */
@@ -105,7 +137,7 @@ const SITE = {
     facts: [
       { label: 'Based in', value: 'Algeria' },
       { label: 'Focus', value: 'Offline-first business software' },
-      { label: 'Stack', value: 'TypeScript, React, Electron, Node, SQLite' },
+      { label: 'Stack', value: 'Rust, Tauri, TypeScript, React, SQLite' },
       { label: 'Languages', value: 'Arabic, French, English' },
     ],
   },
