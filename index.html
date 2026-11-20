@@ -3,38 +3,44 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Yacine Chettouh Full-stack developer</title>
+    <title>Yacine Chettouh — Full-stack developer</title>
     <meta
       name="description"
-      content="Yacine Chettouh, full-stack developer. I build offline-first business software with Electron, React, TypeScript and SQLite."
+      content="Yacine Chettouh, full-stack developer. I build offline-first desktop software with Rust, Tauri, React, TypeScript and SQLite."
     />
-    <meta property="og:title" content="Yacine Chettouh Full-stack developer" />
+    <meta property="og:title" content="Yacine Chettouh — Full-stack developer" />
     <meta
       property="og:description"
-      content="Offline-first business software for Algerian SMEs: Electron, React, TypeScript, SQLite."
+      content="Offline-first business software for Algerian SMEs: Rust, Tauri, React, TypeScript, SQLite."
     />
     <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#08090a" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
     <link
       rel="icon"
-      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%2315171a'/><text y='70' x='50' font-size='54' font-family='Inter,sans-serif' font-weight='700' fill='%2345d9b8' text-anchor='middle'>Y</text></svg>"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%2308090a'/><text y='70' x='50' font-size='54' font-family='Inter,sans-serif' font-weight='600' fill='%2345d9b8' text-anchor='middle'>Y</text></svg>"
     />
   </head>
   <body>
+    <div class="grain" aria-hidden="true"></div>
+
     <header class="site-header">
       <a class="brand" href="#top">Yacine Chettouh</a>
       <nav aria-label="Sections">
         <a href="#work">Work</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
-        <a class="gh" href="https://github.com/chettouhyacine" target="_blank" rel="noreferrer">GitHub ↗</a>
+        <a class="gh" href="https://github.com/chettouhyacine" target="_blank" rel="noreferrer"
+          >GitHub <span aria-hidden="true">↗</span></a
+        >
       </nav>
+      <div class="progress" aria-hidden="true"><i></i></div>
     </header>
 
     <!-- All the text on this page comes from content.js -->
@@ -49,11 +55,6 @@
         </noscript>
       </div>
     </main>
-
-    <footer class="site-footer">
-      <span>© <span id="year">2026</span> Yacine Chettouh</span>
-      <span id="built">Built by hand with HTML and CSS. No framework.</span>
-    </footer>
 
     <script src="content.js"></script>
     <script src="script.js"></script>
