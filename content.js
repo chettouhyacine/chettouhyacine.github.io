@@ -123,6 +123,29 @@ const SITE = {
       ],
       tags: 'Rust, Tauri 2, React, TypeScript, SQLite, AES-256-GCM, Argon2id',
     },
+    netxray: {
+      image: 'assets/netxray-architecture.png',
+      imageAlt:
+        'NetXRay architecture: browser tab, DevTools panel with capture and analysis worker, and the background worker',
+      title: 'NetXRay',
+      badge: 'Browser extension, 2026',
+      description:
+        'A Chrome and Edge DevTools extension for developers: it explains what a web app sends over ' +
+        'the network and flags four attack classes, session hijacking, cross-origin data theft, ' +
+        'clickjacking and credential leakage. Everything runs on the machine: no server, no account, ' +
+        'no telemetry.',
+      highlights: [
+        '34 deterministic rules behind a 0-100 score, with the four v1 attack classes reported only at high confidence.',
+        'Each finding shows the evidence, why it matters, and a fix snippet for Express, Next.js and Nginx.',
+        'Self-contained HTML report, JSON and HAR export, plus HAR import for Firefox and Safari captures.',
+      ],
+      links: [
+        { label: 'Source code', href: 'https://github.com/chettouhyacine/netxray', ghost: false },
+        { label: 'Install v0.2.0', href: 'https://github.com/chettouhyacine/netxray/releases/tag/v0.2.0', ghost: true },
+        { label: 'User guide', href: 'https://github.com/chettouhyacine/netxray/blob/main/docs/usage.md', ghost: true },
+      ],
+      tags: 'TypeScript, React, Vite, Chrome MV3, Web Workers',
+    },
   },
 
   /* ---------- section 02: who you are ---------- */

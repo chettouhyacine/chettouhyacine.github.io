@@ -37,6 +37,7 @@
 
   const project = work.project || {};
   const notaire = work.notaire || {};
+  const netxray = work.netxray || {};
   const second = work.second || {};
 
   /* ------------------------------- work cards ------------------------------ */
@@ -138,6 +139,7 @@
       }
 
       ${notaire.title ? card(notaire) : ''}
+      ${netxray.title ? card(netxray) : ''}
     </section>
 
     <section id="about" class="section">
