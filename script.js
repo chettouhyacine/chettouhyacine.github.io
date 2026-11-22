@@ -12,7 +12,7 @@
   const btn = (b, extra = '') =>
     `<a class="btn ${b.primary ? 'primary' : ''} ${extra}" href="${esc(b.href)}"${
       String(b.href || '').startsWith('http') ? ' target="_blank" rel="noreferrer"' : ''
-    }>${esc(b.label)}</a>`;
+    }${b.download ? ' download' : ''}>${esc(b.label)}</a>`;
 
   const hero = S.hero || {};
   const work = S.work || {};

@@ -234,6 +234,12 @@ const SITE = {
     buttons: [
       { label: 'chettouhyacine2001@gmail.com', href: 'mailto:chettouhyacine2001@gmail.com', primary: true },
       { label: 'github.com/chettouhyacine ↗', href: 'https://github.com/chettouhyacine', primary: false },
+      {
+        label: 'Download CV (PDF)',
+        href: 'assets/CV-Chettouh-Yacine.pdf',
+        download: true,
+        primary: false,
+      },
     ],
   },
 
