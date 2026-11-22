@@ -242,8 +242,8 @@ const SITE = {
       { label: 'chettouhyacine2001@gmail.com', href: 'mailto:chettouhyacine2001@gmail.com', primary: true },
       { label: 'github.com/chettouhyacine ↗', href: 'https://github.com/chettouhyacine', primary: false },
       {
-        label: 'Read the master thesis (PDF) ↗',
-        href: 'assets/Yacine-Chettouh-Master-Thesis.pdf',
+        label: 'Master thesis (repo + PDF) ↗',
+        href: 'https://github.com/chettouhyacine/master-thesis',
         primary: false,
       },
       {
