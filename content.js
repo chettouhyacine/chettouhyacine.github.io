@@ -161,12 +161,19 @@ const SITE = {
         'security, so the encryption, the audit trail and the backups are part of the design, ' +
         'not an afterthought. When a feature cannot be verified, it is not finished: the ' +
         'domain logic is unit tested and the whole flow is exercised end to end before a release.',
+      'My master\'s thesis, written with Mohammed Houssam Eddine Guenou and supervised by ' +
+        'Dr. Youssra Cheriguene at the University of Laghouat, is a **federated learning ' +
+        'intrusion detection system for the Internet of Things**: an on-device adaptive ' +
+        'gradient quality gate, top-k sparsification and a FedProx core cut cumulative ' +
+        'transmission by **80% against FedAvg** on CICIoT2023, while holding 91.5% accuracy ' +
+        'and a 0.786 macro F1 over ten non-IID clients and fifty rounds. Pure PyTorch.',
       'I care about low-end hardware, French and Arabic interfaces, and backups that a ' +
         'non-technical owner can actually perform.',
     ],
     facts: [
       { label: 'Based in', value: 'Algeria' },
-      { label: "Master's", value: 'Networks & security' },
+      { label: "Master's", value: 'Networks & security, 2026' },
+      { label: 'Thesis', value: 'Federated learning IDS for IoT' },
       { label: 'Focus', value: 'Business software, desktop & web' },
       { label: 'Stack', value: 'TypeScript, React, Node.js, Rust, Tauri, Electron, SQLite' },
       { label: 'Languages', value: 'Arabic, French, English' },
@@ -234,6 +241,11 @@ const SITE = {
     buttons: [
       { label: 'chettouhyacine2001@gmail.com', href: 'mailto:chettouhyacine2001@gmail.com', primary: true },
       { label: 'github.com/chettouhyacine ↗', href: 'https://github.com/chettouhyacine', primary: false },
+      {
+        label: 'Read the master thesis (PDF) ↗',
+        href: 'assets/Yacine-Chettouh-Master-Thesis.pdf',
+        primary: false,
+      },
       {
         label: 'Download CV (PDF)',
         href: 'assets/CV-Chettouh-Yacine.pdf',
